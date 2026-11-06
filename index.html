@@ -3,44 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaucja MAP - Strona domowa</title>
+    <title>Kaucja MAP - Dokumenty prawne</title>
     <style>
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            text-align: center;
-            padding: 50px 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f4f6f8;
+            color: #2c3e50;
+            margin: 0;
+            padding: 40px 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 520px;
+            background: #ffffff;
+            padding: 36px 28px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+            text-align: center;
         }
-        h1 { color: #2c3e50; }
-        a {
+        .logo-tag {
             display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
         }
-        a:hover { background-color: #0056b3; }
+        h1 {
+            color: #1b5e20;
+            margin: 0 0 10px 0;
+            font-size: 26px;
+        }
+        p {
+            color: #607274;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            background-color: #ffffff;
+            color: #1b5e20;
+            text-decoration: none;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn:hover {
+            border-color: #2e7d32;
+            background-color: #f1f8e9;
+            transform: translateY(-1px);
+        }
+        .btn span.arrow {
+            color: #81c784;
+            font-size: 18px;
+        }
+        .footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #9e9e9e;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <span class="logo-tag">Oficjalna strona aplikacji</span>
         <h1>Kaucja MAP</h1>
-        <p>Oficjalna witryna aplikacji Kaucja MAP dostępnej w Google Play.</p>
-        
-        <!-- Poniżej znajduje się bezpośredni odnośnik do pliku dla AdMob -->
-        <a href="/app-ads.txt" target="_blank">Sprawdź plik app-ads.txt</a>
+        <p>Wybierz dokument, z którym chcesz się zapoznać:</p>
+
+        <div class="links-group">
+            <a href="/privacy-policy.html" class="btn">
+                <span>Polityka Prywatności</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="/terms-of-service.html" class="btn">
+                <span>Regulamin Aplikacji</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            © 2026 Kaucja MAP. Wszelkie prawa zastrzeżone.
+        </div>
     </div>
 </body>
 </html>
